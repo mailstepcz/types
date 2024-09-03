@@ -12,3 +12,8 @@ require (
 	golang.org/x/text v0.17.0
 	google.golang.org/protobuf v1.34.2
 )
+
+require (
+	github.com/fealsamh/datastructures v0.1.11 // indirect
+	github.com/mailstepcz/enums v0.0.0-20240903145554-276bee708108 // indirect
+)

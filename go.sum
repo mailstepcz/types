@@ -1,11 +1,15 @@
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/fealsamh/datastructures v0.1.11 h1:pJMHCuZhohdNbfTtwE0aSGfNXy/IHb64c0sYDGSqkOM=
+github.com/fealsamh/datastructures v0.1.11/go.mod h1:HjT3MXqYTwjvru/HBnhv3x3tZRQscHWCousuZ6PPprc=
 github.com/fealsamh/go-utils v0.1.31 h1:hxJ3TeDJCMCH8w7C47R8foRWUBW4HKL7Qqru1GfAG+g=
 github.com/fealsamh/go-utils v0.1.31/go.mod h1:KGmm1o+HBBgz7z6GbfHShth//cn+RfvPLsMf6SO+n04=
 github.com/google/go-cmp v0.5.5 h1:Khx7svrCpmxxtHBq5j2mp/xVjsi8hQMfNLvJFAlrGgU=
 github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
 github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
 github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/mailstepcz/enums v0.0.0-20240903145554-276bee708108 h1:uyP4YmjnpiiyMNli4VSD6jjW59vs6dRlupE9omhuSVk=
+github.com/mailstepcz/enums v0.0.0-20240903145554-276bee708108/go.mod h1:BjZ/gUpgVBbxHQcC5aukQOXIB3w2Hg2MECvQCOukW80=
 github.com/mailstepcz/maybe v0.0.0-20240903135450-b09eb1dc973b h1:QHWYwsttAhsXXa0QX8hpQ24JyzdQwzmU161dQISCZ6A=
 github.com/mailstepcz/maybe v0.0.0-20240903135450-b09eb1dc973b/go.mod h1:jYa5xYUC9pKgpt0XkMUZ5A0tXcfKLrxZEAU7nGUrSz8=
 github.com/mailstepcz/pointer v0.1.0 h1:X2IOwkG34Opr0KM4naDbhubWqVVjlFq8Ti1kclSwye8=

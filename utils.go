@@ -9,6 +9,7 @@ import (
 
 	"github.com/fealsamh/go-utils/dbutils"
 	"github.com/google/uuid"
+	"github.com/mailstepcz/enums"
 	"github.com/mailstepcz/maybe"
 	"github.com/mailstepcz/types/iface"
 	"github.com/mailstepcz/validate"
@@ -32,7 +33,7 @@ var (
 	Decimal      = reflect.TypeFor[decimal.Decimal]()
 	Copiable     = reflect.TypeFor[iface.Copiable]()
 	LanguageTag  = reflect.TypeFor[language.Tag]()
-	ClosedEnum   = reflect.TypeFor[iface.ClosedEnum]()
+	ClosedEnum   = reflect.TypeFor[enums.ClosedEnum]()
 	ULID         = reflect.TypeFor[ulid.ULID]()
 	StructpbPtr  = reflect.TypeFor[*structpb.Struct]()
 	Maybe        = maybe.IfaceType
