@@ -3,6 +3,7 @@ package types
 import (
 	"context"
 	"database/sql"
+	"errors"
 	"fmt"
 	"reflect"
 	"time"
@@ -11,6 +12,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/mailstepcz/enums"
 	"github.com/mailstepcz/maybe"
+	"github.com/mailstepcz/serr"
 	"github.com/mailstepcz/types/iface"
 	"github.com/mailstepcz/validate"
 	"github.com/oklog/ulid/v2"
@@ -38,6 +40,11 @@ var (
 	StructpbPtr  = reflect.TypeFor[*structpb.Struct]()
 	Maybe        = maybe.IfaceType
 	Required     = validate.RequiredIfaceType
+)
+
+var (
+	// ErrNoTypeAttributes indicates that no attributes were found for a Postgres type.
+	ErrNoTypeAttributes = errors.New("no attributes for type")
 )
 
 // CheckAlignment checks whether two types are well aligned fieldwise.
@@ -95,6 +102,10 @@ func TypeAttributes(db dbutils.Querier, typname string) ([]string, error) {
 
 	if err := rows.Err(); err != nil {
 		return nil, err
+	}
+
+	if len(fields) == 0 {
+		return nil, serr.Wrap("", ErrNoTypeAttributes, serr.String("type", typname))
 	}
 
 	return fields, nil
