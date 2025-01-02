@@ -49,8 +49,8 @@ var (
 
 // CheckAlignment checks whether two types are well aligned fieldwise.
 func CheckAlignment(t1, t2 reflect.Type) error {
-	fields1 := RelevantFields(t1)
-	fields2 := RelevantFields(t2)
+	fields1 := RelevantFields(t1, nil)
+	fields2 := RelevantFields(t2, nil)
 	if len(fields1) != len(fields2) {
 		return fmt.Errorf("not equal number of fields: %d vs %d", len(fields1), len(fields2))
 	}
@@ -64,12 +64,14 @@ func CheckAlignment(t1, t2 reflect.Type) error {
 }
 
 // RelevantFields returns the list of relevant type fields.
-func RelevantFields(t reflect.Type) []reflect.StructField {
+func RelevantFields(t reflect.Type, filter func(reflect.StructField) bool) []reflect.StructField {
 	var fields []reflect.StructField
 	for i := 0; i < t.NumField(); i++ {
 		f := t.Field(i)
 		if f.PkgPath == "" && !f.Anonymous {
-			fields = append(fields, f)
+			if filter == nil || filter(f) {
+				fields = append(fields, f)
+			}
 		}
 	}
 	return fields

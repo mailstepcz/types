@@ -16,6 +16,8 @@ github.com/mailstepcz/pointer v0.1.0 h1:X2IOwkG34Opr0KM4naDbhubWqVVjlFq8Ti1kclSw
 github.com/mailstepcz/pointer v0.1.0/go.mod h1:zTgDutGlayTlC2vcUOV1lZXr+EjR+95iAgVSFUjXkBA=
 github.com/mailstepcz/serr v0.1.0 h1:gTWgrvS6HddpliRDdEvulDNObuMxSefk9CGNL3uhgYU=
 github.com/mailstepcz/serr v0.1.0/go.mod h1:kcN5rQz02kpW3sl0Je2AHbfmWvQq6jHz/Oegm3Lr/gQ=
+github.com/mailstepcz/slice v0.1.0 h1:hL2GTbi1hJB9ujWlDxQEGfpiyJvqYnin+6HCydFSwFo=
+github.com/mailstepcz/slice v0.1.0/go.mod h1:it8NBpr6Vm76AVvau+DNHJOwsPtQM9FnrzIX2IwfFIA=
 github.com/mailstepcz/validate v0.1.0 h1:rWIEwkSXNp7u3Wz12tX/YwSvNntJFsAMhnz6GZsfzAQ=
 github.com/mailstepcz/validate v0.1.0/go.mod h1:otDBiH7M7jJwLxLJFYMKD9H5L1Hvg0LRvVgFhBuPLaI=
 github.com/oklog/ulid/v2 v2.1.0 h1:+9lhoxAP56we25tyYETBBY1YLA2SaoLvUFgrP2miPJU=
@@ -39,5 +41,7 @@ google.golang.org/grpc v1.65.0 h1:bs/cUb4lp1G5iImFFd3u5ixQzweKizoZJAwBNLR42lc=
 google.golang.org/grpc v1.65.0/go.mod h1:WgYC2ypjlB0EiQi6wdKixMqukr6lBc0Vo+oOgjrM5ZQ=
 google.golang.org/protobuf v1.34.2 h1:6xV6lTsCfpGD21XK49h7MhtcApnLqkfYgPcdHftf6hg=
 google.golang.org/protobuf v1.34.2/go.mod h1:qYOHts0dSfpeUzUFpOMr/WGzszTmLH+DiWniOlNbLDw=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
 gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
