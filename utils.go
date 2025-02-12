@@ -16,6 +16,7 @@ import (
 	"github.com/mailstepcz/types/iface"
 	"github.com/mailstepcz/validate"
 	"github.com/oklog/ulid/v2"
+	"github.com/rickb777/date/v2"
 	"github.com/shopspring/decimal"
 	"golang.org/x/text/language"
 	"google.golang.org/protobuf/types/known/structpb"
@@ -28,6 +29,7 @@ var (
 	UUID         = reflect.TypeFor[uuid.UUID]()
 	UUIDPtr      = reflect.TypeFor[*uuid.UUID]()
 	NullUUID     = reflect.TypeFor[uuid.NullUUID]()
+	Date         = reflect.TypeFor[date.Date]()
 	Time         = reflect.TypeFor[time.Time]()
 	TimePtr      = reflect.TypeFor[*time.Time]()
 	NullTime     = reflect.TypeFor[sql.NullTime]()
