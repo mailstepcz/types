@@ -21,17 +21,12 @@ require (
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/fealsamh/datastructures v0.1.12 // indirect
+	github.com/govalues/decimal v0.1.36 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/rickb777/period v1.0.8 // indirect
+	github.com/rickb777/plural v1.4.2 // indirect
 	golang.org/x/sys v0.30.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250212204824-5a70512c5d8b // indirect
 	google.golang.org/grpc v1.70.0 // indirect
-	github.com/fealsamh/datastructures v0.1.11 // indirect
-	github.com/govalues/decimal v0.1.32 // indirect
-	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/rickb777/period v1.0.7 // indirect
-	github.com/rickb777/plural v1.4.2 // indirect
-	golang.org/x/sys v0.29.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250102185135-69823020774d // indirect
-	google.golang.org/grpc v1.69.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
