@@ -50,9 +50,9 @@ var (
 )
 
 // CheckAlignment checks whether two types are well aligned fieldwise.
-func CheckAlignment(t1, t2 reflect.Type) error {
-	fields1 := RelevantFields(t1, nil)
-	fields2 := RelevantFields(t2, nil)
+func CheckAlignment(t1, t2 reflect.Type, filter1, filter2 func(reflect.StructField) bool) error {
+	fields1 := RelevantFields(t1, filter1)
+	fields2 := RelevantFields(t2, filter2)
 	if len(fields1) != len(fields2) {
 		return fmt.Errorf("not equal number of fields: %d vs %d", len(fields1), len(fields2))
 	}
