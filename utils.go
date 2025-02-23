@@ -47,6 +47,10 @@ var (
 var (
 	// ErrNoTypeAttributes indicates that no attributes were found for a Postgres type.
 	ErrNoTypeAttributes = errors.New("no attributes for type")
+	// Types is the slice of types covered by this package.
+	Types = []reflect.Type{
+		String, UUID, UUIDPtr, NullUUID, Date, Time, TimePtr, NullTime, TimestampPtr, Decimal, LanguageTag, ClosedEnum, ULID, StructpbPtr,
+	}
 )
 
 // CheckAlignment checks whether two types are well aligned fieldwise.
