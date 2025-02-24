@@ -19,6 +19,7 @@ import (
 	"github.com/rickb777/date/v2"
 	"github.com/shopspring/decimal"
 	"golang.org/x/text/language"
+	protoDate "google.golang.org/genproto/googleapis/type/date"
 	"google.golang.org/protobuf/types/known/structpb"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
@@ -30,6 +31,7 @@ var (
 	UUIDPtr      = reflect.TypeFor[*uuid.UUID]()
 	NullUUID     = reflect.TypeFor[uuid.NullUUID]()
 	Date         = reflect.TypeFor[date.Date]()
+	ProtoDate    = reflect.TypeFor[protoDate.Date]()
 	Time         = reflect.TypeFor[time.Time]()
 	TimePtr      = reflect.TypeFor[*time.Time]()
 	NullTime     = reflect.TypeFor[sql.NullTime]()

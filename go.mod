@@ -1,6 +1,8 @@
 module github.com/mailstepcz/types
 
-go 1.22.0
+go 1.23.0
+
+toolchain go1.24.0
 
 require (
 	github.com/fealsamh/go-utils v0.1.41
@@ -15,6 +17,7 @@ require (
 	github.com/shopspring/decimal v1.4.0
 	github.com/stretchr/testify v1.10.0
 	golang.org/x/text v0.22.0
+	google.golang.org/genproto v0.0.0-20250219182151-9fdb1cabc7b2
 	google.golang.org/protobuf v1.36.5
 )
 
