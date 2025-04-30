@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/fealsamh/go-utils/dbutils"
+	"github.com/mailstepcz/go-utils/dbutils"
 	"github.com/google/uuid"
 	"github.com/mailstepcz/enums"
 	"github.com/mailstepcz/maybe"
