@@ -20,6 +20,7 @@ import (
 	"github.com/shopspring/decimal"
 	"golang.org/x/text/language"
 	protoDate "google.golang.org/genproto/googleapis/type/date"
+	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/types/known/structpb"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
@@ -44,6 +45,7 @@ var (
 	ClosedEnum   = reflect.TypeFor[enums.ClosedEnum]()
 	ULID         = reflect.TypeFor[ulid.ULID]()
 	StructpbPtr  = reflect.TypeFor[*structpb.Struct]()
+	ProtoEnum    = reflect.TypeFor[protoreflect.Enum]()
 	Maybe        = maybe.IfaceType
 	Required     = validate.RequiredIfaceType
 )
