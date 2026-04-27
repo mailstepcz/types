@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/mailstepcz/go-utils/dbutils"
 	"github.com/google/uuid"
 	"github.com/mailstepcz/enums"
+	"github.com/mailstepcz/go-utils/dbutils/v2"
 	"github.com/mailstepcz/maybe"
 	"github.com/mailstepcz/serr"
 	"github.com/mailstepcz/types/iface"
@@ -87,7 +87,7 @@ func RelevantFields(t reflect.Type, filter func(reflect.StructField) bool) []ref
 
 // TypeAttributes returns the attributes of a Postgres type.
 func TypeAttributes(db dbutils.Querier, typname string) ([]string, error) {
-	rows, err := db.QueryContext(context.Background(), `
+	rows, err := db.Query(context.Background(), `
 		SELECT attname FROM pg_attribute
 		INNER JOIN pg_type ON typrelid = attrelid
 		WHERE typname = $1 AND attisdropped IS FALSE
@@ -106,9 +106,7 @@ func TypeAttributes(db dbutils.Querier, typname string) ([]string, error) {
 		fields = append(fields, name)
 	}
 
-	if err := rows.Close(); err != nil {
-		return nil, err
-	}
+	rows.Close()
 
 	if err := rows.Err(); err != nil {
 		return nil, err
