@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"reflect"
 	"time"
+	stduuid "uuid"
 
 	"github.com/google/uuid"
 	"github.com/mailstepcz/enums"
@@ -31,6 +32,8 @@ var (
 	UUID         = reflect.TypeFor[uuid.UUID]()
 	UUIDPtr      = reflect.TypeFor[*uuid.UUID]()
 	NullUUID     = reflect.TypeFor[uuid.NullUUID]()
+	StdUUID      = reflect.TypeFor[stduuid.UUID]()
+	StdUUIDPtr   = reflect.TypeFor[*stduuid.UUID]()
 	Date         = reflect.TypeFor[date.Date]()
 	DatePtr      = reflect.TypeFor[*date.Date]()
 	ProtoDate    = reflect.TypeFor[protoDate.Date]()
